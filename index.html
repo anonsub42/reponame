@@ -6,8 +6,7 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title -->
-  <meta name= "DIV-Nav: Open-Vocabulary Spatial Relationships for
-Multi-Object Navigation" content="PAPER_TITLE - Anonymous Submission">
+  <meta name="title" content="DIV-Nav: Open-Vocabulary Spatial Relationships for Multi-Object Navigation">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
@@ -316,7 +315,28 @@ Multi-Object Navigation" content="PAPER_TITLE - Anonymous Submission">
       <div class="content has-text-justified">
         <!-- TODO: Replace with your paper abstract -->
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+          Advances in open-vocabulary semantic mapping
+and object navigation have enabled robots to perform an
+informed search of their environment for an arbitrary object.
+However, such zero-shot object navigation is typically designed
+for simple queries with an object name like ”television” or
+”blue rug”. Here, we consider more complex free-text queries
+with spatial relationships, such as ”find the remote on the
+table” while still leveraging robustness of a semantic map. We
+present DIV-Nav, a real-time navigation system that efficiently
+addresses this problem through a series of relaxations: i) De-
+composing natural language instructions with complex spatial
+constraints into simpler object-level queries on a semantic map,
+ii) computing the Intersection of individual semantic belief
+maps to identify regions where all objects co-exist, and iii)
+Validating the discovered objects against the original, complex
+spatial constrains via a LVLM. We further investigate how
+to adapt the frontier exploration objectives of online semantic
+mapping to such spatial search queries to more effectively
+guide the search process. We validate our system through
+extensive experiments on the MultiON benchmark and real-
+world deployment on a Boston Dynamics Spot robot using a
+Jetson Orin AGX. 
         </p>
       </div>
     </div>
