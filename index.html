@@ -233,7 +233,7 @@
 
             <div class="is-size-5 publication-authors">
               <!-- Anonymous institution and conference info -->
-              <span class="author-block">Anonymous Institution<br>ICRA 2026</span>
+              <span class="author-block">Anonymous Institution<br>IROS 2026</span>
               <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
             </div>
 
@@ -301,9 +301,9 @@
     <img src="static/images/overview.jpeg" alt="Third research result visualization" loading="lazy" style="width: 200%; height: auto; display: block; margin: 0 auto;"/>
       <h2 class="subtitle has-text-centered">
        Overview of DIV-Nav. (1) We Decompose spatially-constrained instructions into object-level queries on a semantic
-map (a-b); (2) Compute Intersections across similarity maps to find navigation regions where objects co-exist (c-d); (3)
-Validate high-similarity regions by aproaching the region, and via LVLM reasoning to confirm individual objects and their
-spatial relationships (e).
+map (a-b); (2) Compute Intersections to create a joint belief map that actively guides online frontier exploration toward
+regions where objects likely co-exist (c-d); (3) Validate high-similarity regions by approaching the region, and via LVLM
+reasoning to confirm individual objects and their spatial relationships (e).
      </h2>
     <!-- TODO: Replace with your video description -->
     <h2 class="subtitle has-text-centered">
@@ -323,26 +323,8 @@ spatial relationships (e).
       <div class="content has-text-justified">
         <!-- TODO: Replace with your paper abstract -->
         <p>
-          Advances in open-vocabulary semantic mapping
-and object navigation have enabled robots to perform an
-informed search of their environment for an arbitrary object.
-However, such zero-shot object navigation is typically designed
-for simple queries with an object name like ”television” or
-”blue rug”. Here, we consider more complex free-text queries
-with spatial relationships, such as ”find the remote on the
-table” while still leveraging robustness of a semantic map. We
-present DIV-Nav, a real-time navigation system that efficiently
-addresses this problem through a series of relaxations: i) Decomposing natural language instructions with complex spatial
-constraints into simpler object-level queries on a semantic map,
-ii) computing the Intersection of individual semantic belief
-maps to identify regions where all objects co-exist, and iii)
-Validating the discovered objects against the original, complex
-spatial constrains via a LVLM. We further investigate how
-to adapt the frontier exploration objectives of online semantic
-mapping to such spatial search queries to more effectively
-guide the search process. We validate our system through
-extensive experiments on the MultiON benchmark and real-world deployment on a Boston Dynamics Spot robot using a
-Jetson Orin AGX. 
+          Advances in open-vocabulary semantic mapping and object navigation have enabled robots to perform an informed search of their environment for an arbitrary object. However, such zero-shot object navigation is typically designed for simple queries with an object label like "television" or "blue rug". While single- and multi-object search have progressed, real-time navigation with explicit spatial relationship reasoning during online map construction remains largely unexplored, as existing methods either rely on offline 3D reconstruction or handle only individual object targets without relational constraints. Here, we consider more complex free-text queries with spatial relationships, such as "find the remote on the table", while still leveraging the robustness of a semantic map.
+We present DIV-Nav, a real-time navigation system that addresses this problem through a series of relaxations: i) Decomposing natural language instructions with complex spatial constraints into simpler object-level queries, ii) computing the Intersection of individual semantic belief maps via continuous-valued scoring to identify regions where all objects co-exist, and iii) Validating discovered objects against the original spatial constraints via a vision-language model. We further investigate how to adapt frontier exploration for online semantic mapping to such spatial search queries to more effectively guide the search process. We validate our system through extensive experiments on the MultiON benchmark and real-world deployment on a Boston Dynamics Spot robot, achieving an 88\% success rate on multi-object spatial-relationship navigation tasks.
         </p>
       </div>
     </div>
